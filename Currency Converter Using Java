@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class CurrencyConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Exchange rate from USD to EUR
+        double exchangeRate = 0.85; // 1 USD = 0.85 EUR
+
+        System.out.print("Enter the amount in US Dollars: ");
+        double usdAmount = scanner.nextDouble();
+
+        // Conversion
+        double eurAmount = usdAmount * exchangeRate;
+
+        System.out.println(usdAmount + " US Dollars is equal to " + eurAmount + " Euros.");
+    }
+}
